@@ -1,4 +1,4 @@
-# Terraform Provider JSON
+# Terraform Provider Json Server
 Custom plugin created on article: [Creating the first terraform custom provider](https://aws.amazon.com/pt/sdk-for-node-js/)
    
 ### Requirements
@@ -23,9 +23,9 @@ Custom plugin created on article: [Creating the first terraform custom provider]
     ```
 
 ### Build provider
-* Run the following command to build the provider on folder **terraform-provider-json**
+* Run the following command to build the provider on folder **terraform-provider-jsonserver**
     ```
-    $ go build -o terraform-provider-json
+    $ go build -o terraform-provider-jsonserver
     ```
 * Run Makefile to install provider
     ```

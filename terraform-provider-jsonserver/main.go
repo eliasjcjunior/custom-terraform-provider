@@ -4,13 +4,13 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
 
-	"terraform-provider-jsonplaceholder/jsonplaceholder"
+	"terraform-provider-jsonserver/jsonserver"
 )
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
 		ProviderFunc: func() *schema.Provider {
-			return jsonplaceholder.Provider()
+			return jsonserver.Provider()
 		},
 	})
 }

@@ -1,6 +1,6 @@
 HOSTNAME=local.com
 NAMESPACE=eliasjcjunior
-NAME=json
+NAME=jsonserver
 BINARY=terraform-provider-${NAME}
 VERSION=0.1
 OS_ARCH=linux_amd64

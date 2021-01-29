@@ -1,8 +1,8 @@
 terraform {
   required_providers {
-    jsonplaceholder = {
+    json = {
       versions = ["0.1"]
-      source = "hashicorp.com/edu/jsonplaceholder"
+      source = "local.com/eliasjcjunior/jsonserver"
     }
   }
 }
