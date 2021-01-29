@@ -14,3 +14,23 @@ resource "jsonserver_user" "new" {
   username = "myuser"
   website = "myuser.com"
 }
+
+data "jsonserver_user" "main" {
+  depends_on = [jsonserver_user.new]
+  where {
+    field = "email"
+    value = "myuser@mail.com"
+  }
+}
+
+output "user_name" {
+  value = data.jsonserver_user.main.name
+}
+
+output "user_email" {
+  value = data.jsonserver_user.main.email
+}
+
+output "user_website" {
+  value = data.jsonserver_user.main.website
+}

@@ -9,6 +9,8 @@ func Provider() *schema.Provider {
 		ResourcesMap: map[string]*schema.Resource{
 			"jsonserver_user": resourceUser(),
 		},
-		DataSourcesMap: map[string]*schema.Resource{},
+		DataSourcesMap: map[string]*schema.Resource{
+			"jsonserver_user": dataSourceUser(),
+		},
 	}
 }
