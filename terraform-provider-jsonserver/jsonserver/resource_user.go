@@ -188,10 +188,11 @@ func resourceUserDelete(d *schema.ResourceData, m interface{}) error {
 
 func resourceUser() *schema.Resource {
 	return &schema.Resource{
-		Create: resourceUserCreate,
-		Read:   resourceUserRead,
-		Update: resourceUserUpdate,
-		Delete: resourceUserDelete,
+		Create:   resourceUserCreate,
+		Read:     resourceUserRead,
+		Update:   resourceUserUpdate,
+		Delete:   resourceUserDelete,
+		Importer: &schema.ResourceImporter{State: resourceUserImportState},
 		Schema: map[string]*schema.Schema{
 			"id": &schema.Schema{
 				Type:     schema.TypeString,
