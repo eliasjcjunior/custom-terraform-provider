@@ -6,3 +6,11 @@ terraform {
     }
   }
 }
+
+resource "jsonserver_user" "new" {
+  name = ""
+  email = ""
+  phone = ""
+  username = ""
+  website = ""
+}
